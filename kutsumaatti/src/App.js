@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import EnrollForm from './EnrollForm';
+import './reset.css';
 import './App.css';
 
 class App extends Component {
