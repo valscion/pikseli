@@ -55,8 +55,10 @@ function EnrollmentList(props) {
 
   return (
     <div className='Kisamaatti-EnrollmentList'>
-      {/*<pre>{ENROLL_REGEX.toString()}</pre>
-      <pre>{JSON.stringify(parseData(data), null, 2)}</pre>*/}
+      {/* Poista alta kommenttimerkit ja näet käytetin regexin */}
+      {/*<pre>{ENROLL_REGEX.toString()}</pre>*/}
+      {/* Poista alta kommenttimerkit ja näet regexin raakadatan */}
+      {/*<pre>{JSON.stringify(niceData, null, 2)}</pre>*/}
       <table>
         <thead>
           <tr>
