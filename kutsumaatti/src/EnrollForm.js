@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ParsedEnrollments from './ParsedEnrollments';
+import EnrollmentList from './EnrollmentList';
 import './EnrollForm.css';
 
 class EnrollForm extends Component {
@@ -18,7 +18,7 @@ class EnrollForm extends Component {
           onChange={ this.handleTextareaChange }
           value={ this.state.input }
         />
-        <ParsedEnrollments data={ this.state.input } />
+        <EnrollmentList data={ this.state.input } />
       </div>
     );
   }

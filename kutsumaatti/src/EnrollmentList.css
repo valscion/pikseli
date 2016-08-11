@@ -1,0 +1,18 @@
+.Kisamaatti-EnrollmentList {}
+
+.Kisamaatti-EnrollmentList table {
+  border-collapse: collapse;
+}
+
+.Kisamaatti-EnrollmentList tr:hover td {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Kisamaatti-EnrollmentList th {
+  padding: 0 10px;
+}
+
+.Kisamaatti-EnrollmentList td {
+  border: 1px solid olive;
+  padding: 5px 10px;
+}

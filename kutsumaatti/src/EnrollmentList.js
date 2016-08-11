@@ -1,5 +1,5 @@
 import React from 'react';
-import './ParsedEnrollments.css';
+import './EnrollmentList.css';
 
 const START = '^';
 const OWNER_BEFORE_VRL = '([^\\(]+) ';
@@ -29,7 +29,7 @@ const ENROLL_REGEX = new RegExp(
 )
 
 function parseData(data) {
-  const lines = data.split("\n");
+  const lines = data.split("\n").filter(l => l.trim().length > 0);
   return lines.map((line) => {
     const testResult = line.match(ENROLL_REGEX);
     if (!testResult) {
@@ -50,11 +50,11 @@ function parseData(data) {
   });
 }
 
-function ParsedEnrollments(props) {
+function EnrollmentList(props) {
   const niceData = parseData(props.data);
 
   return (
-    <div className='Kisamaatti-ParsedEnrollments'>
+    <div className='Kisamaatti-EnrollmentList'>
       {/*<pre>{ENROLL_REGEX.toString()}</pre>
       <pre>{JSON.stringify(parseData(data), null, 2)}</pre>*/}
       <table>
@@ -81,4 +81,4 @@ function ParsedEnrollments(props) {
   );
 }
 
-export default ParsedEnrollments;
+export default EnrollmentList;
