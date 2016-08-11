@@ -29,8 +29,7 @@ const ENROLL_REGEX = new RegExp(
   ].join('')
 )
 
-function parseData(data) {
-  const lines = data.split("\n").filter(l => l.trim().length > 0);
+function parseData(lines) {
   return lines.map((line) => {
     const testResult = line.match(ENROLL_REGEX);
     if (!testResult) {
@@ -51,8 +50,12 @@ function parseData(data) {
   });
 }
 
+function onlyOneBlankLine(array) {
+  return array.length === 1 && array[0] === ''
+}
+
 function EnrollmentList(props) {
-  const niceData = parseData(props.data);
+  const niceData = onlyOneBlankLine(props.lines) ? [] : parseData(props.lines);
 
   return (
     <div className='Kisamaatti-EnrollmentList'>
