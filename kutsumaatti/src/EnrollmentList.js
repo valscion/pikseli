@@ -1,4 +1,5 @@
 import React from 'react';
+import Enrollment from './Enrollment';
 import './EnrollmentList.css';
 
 const START = '^';
@@ -70,12 +71,13 @@ function EnrollmentList(props) {
         </thead>
         <tbody>
           {niceData.map((enrollee) =>
-            <tr key={enrollee.horseName}>
-              <td>{enrollee.owner}</td>
-              <td>{enrollee.vrl}</td>
-              <td>{enrollee.horseName}</td>
-              <td>{enrollee.vh}</td>
-            </tr>
+            <Enrollment
+              key={enrollee.horseName}
+              owner={enrollee.owner}
+              vrl={enrollee.vrl}
+              horseName={enrollee.horseName}
+              vh={enrollee.vh}
+            />
           )}
         </tbody>
       </table>
