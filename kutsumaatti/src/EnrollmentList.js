@@ -34,6 +34,7 @@ function parseData(lines) {
     const testResult = line.match(ENROLL_REGEX);
     if (!testResult) {
       return {
+        raw: line,
         owner: null,
         vrl: null,
         horseName: line,
@@ -42,6 +43,7 @@ function parseData(lines) {
     }
 
     return {
+      raw: line,
       owner: testResult[matchParts.owner],
       vrl: testResult[matchParts.vrl],
       horseName: testResult[matchParts.horseName],
@@ -79,6 +81,7 @@ function EnrollmentList(props) {
           {niceData.map((enrollee, rowNumber) =>
             <Enrollment
               key={rowNumber}
+              raw={enrollee.raw}
               owner={enrollee.owner}
               vrl={enrollee.vrl}
               horseName={enrollee.horseName}
