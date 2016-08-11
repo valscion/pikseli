@@ -4,7 +4,7 @@ import './EnrollmentList.css';
 
 const START = '^';
 const OWNER_BEFORE_VRL = '([^\\(]+) ';
-const VRL_ID = '\\((.*)\\) ';
+const VRL_ID = '\\((VRL-\\d{5})\\) ';
 const DASH_BEFORE_HORSE = '(?:-|–|—) '
 const HORSE_NAME = '(.*?)'
 const VH_ID = ' ?(VH\\d+-\\d+-\\d+)?'
