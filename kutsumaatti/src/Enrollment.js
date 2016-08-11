@@ -1,12 +1,14 @@
 import React from 'react';
 
 function Enrollment(props) {
+  const enrollee = props.enrollee;
+
   return (
     <tr>
-      <td>{props.owner}</td>
-      <td>{props.vrl}</td>
-      <td>{props.horseName}</td>
-      <td>{props.vh}</td>
+      <td>{enrollee.owner}</td>
+      <td>{enrollee.vrl}</td>
+      <td>{enrollee.horseName}</td>
+      <td>{enrollee.vh}</td>
     </tr>
   )
 }

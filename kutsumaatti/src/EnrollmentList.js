@@ -82,11 +82,7 @@ function EnrollmentList(props) {
             <Enrollment
               key={rowNumber}
               onChange={ (newContent) => props.onLineChange(rowNumber, newContent) }
-              raw={enrollee.raw}
-              owner={enrollee.owner}
-              vrl={enrollee.vrl}
-              horseName={enrollee.horseName}
-              vh={enrollee.vh}
+              enrollee={enrollee}
             />
           )}
         </tbody>
