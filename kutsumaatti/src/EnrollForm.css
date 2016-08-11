@@ -1,0 +1,8 @@
+.EnrollForm__textarea {
+  width: 100%;
+  min-height: 10rem;
+  margin-bottom: 1rem;
+  font-size: 13px;
+  line-height: 1.2;
+  padding: 5px;
+}
