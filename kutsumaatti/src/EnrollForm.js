@@ -55,6 +55,7 @@ class EnrollForm extends Component {
         />
         <EnrollmentList
           lines={ lines }
+          onLineChange={ this.handleLineChange }
         />
       </div>
     );
@@ -63,6 +64,18 @@ class EnrollForm extends Component {
   handleTextareaChange = (event) => {
     const newValue = event.target.value;
     this.setState({ input: newValue });
+  }
+
+  handleLineChange = (line, newContent) => {
+    const lines = this.state.input.split("\n");
+
+    const newInput = [
+      ...lines.slice(0, line),
+      newContent,
+      ...lines.slice(line + 1)
+    ].join("\n")
+
+    this.setState({ input: newInput })
   }
 }
 

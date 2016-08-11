@@ -81,6 +81,7 @@ function EnrollmentList(props) {
           {niceData.map((enrollee, rowNumber) =>
             <Enrollment
               key={rowNumber}
+              onChange={ (newContent) => props.onLineChange(rowNumber, newContent) }
               raw={enrollee.raw}
               owner={enrollee.owner}
               vrl={enrollee.vrl}
