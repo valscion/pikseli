@@ -50,12 +50,15 @@ function parseData(lines) {
   });
 }
 
-function onlyOneBlankLine(array) {
-  return array.length === 1 && array[0] === ''
+function skipLastBlankLine(array) {
+  if (array[array.length - 1] === '') {
+    return array.slice(0, -1);
+  }
+  return array;
 }
 
 function EnrollmentList(props) {
-  const niceData = onlyOneBlankLine(props.lines) ? [] : parseData(props.lines);
+  const niceData = parseData(skipLastBlankLine(props.lines));
 
   return (
     <div className='Kisamaatti-EnrollmentList'>
