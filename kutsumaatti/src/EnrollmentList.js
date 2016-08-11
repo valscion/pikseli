@@ -73,9 +73,9 @@ function EnrollmentList(props) {
           </tr>
         </thead>
         <tbody>
-          {niceData.map((enrollee) =>
+          {niceData.map((enrollee, rowNumber) =>
             <Enrollment
-              key={enrollee.horseName}
+              key={rowNumber}
               owner={enrollee.owner}
               vrl={enrollee.vrl}
               horseName={enrollee.horseName}
