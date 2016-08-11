@@ -35,10 +35,7 @@ function parseData(lines) {
     if (!testResult) {
       return {
         raw: line,
-        owner: null,
-        vrl: null,
-        horseName: line,
-        vh: null
+        invalid: true
       };
     }
 

@@ -1,0 +1,15 @@
+.Kisamaatti-Enrollment {}
+
+.Kisamaatti-Enrollment:hover td {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Kisamaatti-Enrollment--invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Kisamaatti-Enrollment td {
+  border: 1px solid olive;
+  padding: 5px 10px;
+}
