@@ -33,9 +33,9 @@ Hamzi (VRL-02163) - Sweetness vd Shadow VH04-012-7201
 
   render() {
     return (
-      <div className='EnrollForm'>
+      <div className='Kisamaatti-EnrollForm'>
         <textarea
-          className='EnrollForm__textarea'
+          className='Kisamaatti-EnrollForm__textarea'
           onChange={ this.handleTextareaChange }
           value={ this.state.input }
         />

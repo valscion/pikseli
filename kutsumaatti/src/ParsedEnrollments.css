@@ -1,14 +1,14 @@
-.ParsedEnrollments {}
+.Kisamaatti-ParsedEnrollments {}
 
-.ParsedEnrollments table {
+.Kisamaatti-ParsedEnrollments table {
   border-collapse: collapse;
 }
 
-.ParsedEnrollments tr:hover td {
+.Kisamaatti-ParsedEnrollments tr:hover td {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.ParsedEnrollments td {
+.Kisamaatti-ParsedEnrollments td {
   border: 1px solid olive;
   padding: 5px 10px;
 }

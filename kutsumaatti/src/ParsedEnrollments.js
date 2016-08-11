@@ -54,7 +54,7 @@ function ParsedEnrollments(props) {
   const niceData = parseData(props.data);
 
   return (
-    <div className='ParsedEnrollments'>
+    <div className='Kisamaatti-ParsedEnrollments'>
       {/*<pre>{ENROLL_REGEX.toString()}</pre>
       <pre>{JSON.stringify(parseData(data), null, 2)}</pre>*/}
       <table>

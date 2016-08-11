@@ -6,8 +6,8 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className='App'>
-        <h2 className='App__heading'>Kisamaatti</h2>
+      <div className='Kisamaatti'>
+        <h2 className='Kisamaatti__heading'>Kisamaatti</h2>
         <EnrollForm />
       </div>
     );

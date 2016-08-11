@@ -1,10 +1,10 @@
-.App {
+.Kisamaatti {
   margin: 1rem auto 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 800px;
 }
 
-.App__heading {
+.Kisamaatti__heading {
   margin-bottom: 0.5rem;
 }
