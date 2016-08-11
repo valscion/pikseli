@@ -1,7 +1,13 @@
-.Kisamaatti-Enrollment {}
+.Kisamaatti-Enrollment {
+  cursor: pointer;
+}
 
 .Kisamaatti-Enrollment:hover td {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Kisamaatti-Enrollment--editing {
+  cursor: initial;
 }
 
 .Kisamaatti-Enrollment--invalid {
@@ -12,4 +18,19 @@
 .Kisamaatti-Enrollment td {
   border: 1px solid olive;
   padding: 5px 10px;
+}
+
+.Kisamaatti-Enrollment--editing td {
+  padding: 0;
+}
+
+.Kisamaatti-Enrollment input {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 3px 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  outline: none;
 }

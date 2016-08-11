@@ -2,6 +2,7 @@
 
 .Kisamaatti-EnrollmentList table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 .Kisamaatti-EnrollmentList th {
