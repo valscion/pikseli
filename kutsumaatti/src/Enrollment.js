@@ -25,9 +25,9 @@ class Enrollment extends Component {
     const enrollee = this.props.enrollee;
 
     return (
-      <div className='Kisamaatti-Enrollment Kisamaatti-Enrollment--editing'>
+      <div className='KM-Enrollment KM-Enrollment--editing'>
         <div
-          className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--full-width'
+          className='KM-Enrollment__item KM-Enrollment__item--full-width'
         >
           <input
             type='text'
@@ -48,11 +48,11 @@ class Enrollment extends Component {
 
     return (
       <div
-        className='Kisamaatti-Enrollment Kisamaatti-Enrollment--invalid'
+        className='KM-Enrollment KM-Enrollment--invalid'
         onClick={ () => this.setState({ isEditing: true }) }
       >
         <div
-          className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--full-width'
+          className='KM-Enrollment__item KM-Enrollment__item--full-width'
         >
           {enrollee.raw}
         </div>
@@ -65,19 +65,19 @@ class Enrollment extends Component {
 
     return (
       <div
-        className='Kisamaatti-Enrollment'
+        className='KM-Enrollment'
         onClick={ () => this.setState({ isEditing: true }) }
       >
-        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--owner'>
+        <div className='KM-Enrollment__item KM-Enrollment__item--owner'>
           {enrollee.owner}
         </div>
-        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--vrl'>
+        <div className='KM-Enrollment__item KM-Enrollment__item--vrl'>
           {enrollee.vrl}
         </div>
-        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--horseName'>
+        <div className='KM-Enrollment__item KM-Enrollment__item--horseName'>
           {enrollee.horseName}
         </div>
-        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--vh'>
+        <div className='KM-Enrollment__item KM-Enrollment__item--vh'>
           {enrollee.vh}
         </div>
       </div>

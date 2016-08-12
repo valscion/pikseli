@@ -47,9 +47,9 @@ class EnrollForm extends Component {
     const lines = this.state.input.split("\n");
 
     return (
-      <div className='Kisamaatti-EnrollForm'>
+      <div className='KM-EnrollForm'>
         <textarea
-          className='Kisamaatti-EnrollForm__textarea'
+          className='KM-EnrollForm__textarea'
           onChange={ this.handleTextareaChange }
           value={ this.state.input }
         />

@@ -1,23 +1,23 @@
-.Kisamaatti-Enrollment {
+.KM-Enrollment {
   display: table-row;
   width: 100%;
   cursor: pointer;
 }
 
-.Kisamaatti-Enrollment:hover .Kisamaatti-Enrollment__item {
+.KM-Enrollment:hover .KM-Enrollment__item {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.Kisamaatti-Enrollment--editing {
+.KM-Enrollment--editing {
   cursor: initial;
 }
 
-.Kisamaatti-Enrollment--invalid {
+.KM-Enrollment--invalid {
   background-color: rgba(255, 0, 0, 0.1);
   text-align: center;
 }
 
-.Kisamaatti-Enrollment__item {
+.KM-Enrollment__item {
   display: table-cell;
   overflow: hidden;
   overflow-wrap: break-word;
@@ -25,30 +25,30 @@
   padding: 5px 10px;
 }
 
-.Kisamaatti-Enrollment__item--full-width {
+.KM-Enrollment__item--full-width {
   width: 100%;
 }
 
-.Kisamaatti-Enrollment__item--owner {
+.KM-Enrollment__item--owner {
 }
 
-.Kisamaatti-Enrollment__item--vrl {
+.KM-Enrollment__item--vrl {
   text-align: center;
 }
 
-.Kisamaatti-Enrollment__item--horseName {
+.KM-Enrollment__item--horseName {
 }
 
-.Kisamaatti-Enrollment__item--vh {
+.KM-Enrollment__item--vh {
   text-align: center;
 }
 
 
-.Kisamaatti-Enrollment--editing .Kisamaatti-Enrollment__item {
+.KM-Enrollment--editing .KM-Enrollment__item {
   padding: 0;
 }
 
-.Kisamaatti-Enrollment input {
+.KM-Enrollment input {
   display: block;
   -webkit-appearance: none;
   -moz-appearance: none;

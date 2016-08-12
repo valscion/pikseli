@@ -1,14 +1,14 @@
-.Kisamaatti-EnrollmentList {
+.KM-EnrollmentList {
   display: table;
   border-collapse: collapse;
   width: 100%;
 }
 
-.Kisamaatti-EnrollmentList__heading-container {
+.KM-EnrollmentList__heading-container {
   display: table-row;
 }
 
-.Kisamaatti-EnrollmentList__heading {
+.KM-EnrollmentList__heading {
   display: table-cell;
   padding: 0 10px;
   overflow: hidden;
@@ -16,14 +16,14 @@
   text-align: center;
 }
 
-.Kisamaatti-EnrollmentList__heading--owner {
+.KM-EnrollmentList__heading--owner {
 }
 
-.Kisamaatti-EnrollmentList__heading--vrl {
+.KM-EnrollmentList__heading--vrl {
 }
 
-.Kisamaatti-EnrollmentList__heading--horseName {
+.KM-EnrollmentList__heading--horseName {
 }
 
-.Kisamaatti-EnrollmentList__heading--vh {
+.KM-EnrollmentList__heading--vh {
 }

@@ -60,22 +60,22 @@ function EnrollmentList(props) {
   const niceData = parseData(skipLastBlankLine(props.lines));
 
   return (
-    <div className='Kisamaatti-EnrollmentList'>
+    <div className='KM-EnrollmentList'>
       {/* Poista alta kommenttimerkit ja näet käytetin regexin */}
       {/*<pre>{ENROLL_REGEX.toString()}</pre>*/}
       {/* Poista alta kommenttimerkit ja näet regexin raakadatan */}
       {/*<pre>{JSON.stringify(niceData, null, 2)}</pre>*/}
-      <div className='Kisamaatti-EnrollmentList__heading-container'>
-        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--owner'>
+      <div className='KM-EnrollmentList__heading-container'>
+        <div className='KM-EnrollmentList__heading KM-EnrollmentList__heading--owner'>
           Omistaja
         </div>
-        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--vrl'>
+        <div className='KM-EnrollmentList__heading KM-EnrollmentList__heading--vrl'>
           VRL
         </div>
-        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--horseName'>
+        <div className='KM-EnrollmentList__heading KM-EnrollmentList__heading--horseName'>
           Hevonen
         </div>
-        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--vh'>
+        <div className='KM-EnrollmentList__heading KM-EnrollmentList__heading--vh'>
           VH
         </div>
       </div>
