@@ -25,8 +25,10 @@ class Enrollment extends Component {
     const enrollee = this.props.enrollee;
 
     return (
-      <tr className='Kisamaatti-Enrollment Kisamaatti-Enrollment--editing'>
-        <td colSpan='4'>
+      <div className='Kisamaatti-Enrollment Kisamaatti-Enrollment--editing'>
+        <div
+          className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--full-width'
+        >
           <input
             type='text'
             value={enrollee.raw}
@@ -36,8 +38,8 @@ class Enrollment extends Component {
             onChange={ (evt) => this.props.onChange(evt.target.value) }
             onBlur={ () => this.setState({ isEditing: false }) }
           />
-        </td>
-      </tr>
+        </div>
+      </div>
     )
   }
 
@@ -45,14 +47,16 @@ class Enrollment extends Component {
     const enrollee = this.props.enrollee;
 
     return (
-      <tr
+      <div
         className='Kisamaatti-Enrollment Kisamaatti-Enrollment--invalid'
         onClick={ () => this.setState({ isEditing: true }) }
       >
-        <td colSpan='4'>
+        <div
+          className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--full-width'
+        >
           {enrollee.raw}
-        </td>
-      </tr>
+        </div>
+      </div>
     )
   }
 
@@ -60,15 +64,23 @@ class Enrollment extends Component {
     const enrollee = this.props.enrollee;
 
     return (
-      <tr
+      <div
         className='Kisamaatti-Enrollment'
         onClick={ () => this.setState({ isEditing: true }) }
       >
-        <td>{enrollee.owner}</td>
-        <td>{enrollee.vrl}</td>
-        <td>{enrollee.horseName}</td>
-        <td>{enrollee.vh}</td>
-      </tr>
+        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--owner'>
+          {enrollee.owner}
+        </div>
+        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--vrl'>
+          {enrollee.vrl}
+        </div>
+        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--horseName'>
+          {enrollee.horseName}
+        </div>
+        <div className='Kisamaatti-Enrollment__item Kisamaatti-Enrollment__item--vh'>
+          {enrollee.vh}
+        </div>
+      </div>
     )
   }
 }

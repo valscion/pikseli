@@ -65,25 +65,27 @@ function EnrollmentList(props) {
       {/*<pre>{ENROLL_REGEX.toString()}</pre>*/}
       {/* Poista alta kommenttimerkit ja näet regexin raakadatan */}
       {/*<pre>{JSON.stringify(niceData, null, 2)}</pre>*/}
-      <table>
-        <thead>
-          <tr>
-            <th>Omistaja</th>
-            <th>VRL</th>
-            <th>Hevonen</th>
-            <th>VH</th>
-          </tr>
-        </thead>
-        <tbody>
-          {niceData.map((enrollee, rowNumber) =>
-            <Enrollment
-              key={rowNumber}
-              onChange={ (newContent) => props.onLineChange(rowNumber, newContent) }
-              enrollee={enrollee}
-            />
-          )}
-        </tbody>
-      </table>
+      <div className='Kisamaatti-EnrollmentList__heading-container'>
+        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--owner'>
+          Omistaja
+        </div>
+        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--vrl'>
+          VRL
+        </div>
+        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--horseName'>
+          Hevonen
+        </div>
+        <div className='Kisamaatti-EnrollmentList__heading Kisamaatti-EnrollmentList__heading--vh'>
+          VH
+        </div>
+      </div>
+      {niceData.map((enrollee, rowNumber) =>
+        <Enrollment
+          key={rowNumber}
+          onChange={ (newContent) => props.onLineChange(rowNumber, newContent) }
+          enrollee={enrollee}
+        />
+      )}
     </div>
   );
 }

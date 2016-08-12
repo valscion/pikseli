@@ -1,8 +1,10 @@
 .Kisamaatti-Enrollment {
+  display: table-row;
+  width: 100%;
   cursor: pointer;
 }
 
-.Kisamaatti-Enrollment:hover td {
+.Kisamaatti-Enrollment:hover .Kisamaatti-Enrollment__item {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -15,12 +17,34 @@
   text-align: center;
 }
 
-.Kisamaatti-Enrollment td {
+.Kisamaatti-Enrollment__item {
+  display: table-cell;
+  overflow: hidden;
+  overflow-wrap: break-word;
   border: 1px solid olive;
   padding: 5px 10px;
 }
 
-.Kisamaatti-Enrollment--editing td {
+.Kisamaatti-Enrollment__item--full-width {
+  width: 100%;
+}
+
+.Kisamaatti-Enrollment__item--owner {
+}
+
+.Kisamaatti-Enrollment__item--vrl {
+  text-align: center;
+}
+
+.Kisamaatti-Enrollment__item--horseName {
+}
+
+.Kisamaatti-Enrollment__item--vh {
+  text-align: center;
+}
+
+
+.Kisamaatti-Enrollment--editing .Kisamaatti-Enrollment__item {
   padding: 0;
 }
 

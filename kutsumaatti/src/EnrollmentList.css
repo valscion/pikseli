@@ -1,10 +1,29 @@
-.Kisamaatti-EnrollmentList {}
-
-.Kisamaatti-EnrollmentList table {
+.Kisamaatti-EnrollmentList {
+  display: table;
   border-collapse: collapse;
   width: 100%;
 }
 
-.Kisamaatti-EnrollmentList th {
+.Kisamaatti-EnrollmentList__heading-container {
+  display: table-row;
+}
+
+.Kisamaatti-EnrollmentList__heading {
+  display: table-cell;
   padding: 0 10px;
+  overflow: hidden;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Kisamaatti-EnrollmentList__heading--owner {
+}
+
+.Kisamaatti-EnrollmentList__heading--vrl {
+}
+
+.Kisamaatti-EnrollmentList__heading--horseName {
+}
+
+.Kisamaatti-EnrollmentList__heading--vh {
 }
